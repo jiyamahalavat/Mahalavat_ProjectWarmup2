@@ -1,8 +1,8 @@
 function describeRoom(roomName) {
-    if (roomName === "foyer") {
-        return "The foyer smells of dust and something faintly metallic.";
+    if (roomName === "entrance") {
+        return "The entrance smells of dust and something faintly metallic.";
     } else if (roomName === "kitchen") {
-        return "The kitchen counters are coated in grime, and the sink drips slowly.";
+        return "The kitchen counters are coated in mold, and the sink drips slowly.";
     } else if (roomName === "upstairs") {
         return "The upstairs hallway creaks beneath your feet.";
     } else {
@@ -10,32 +10,22 @@ function describeRoom(roomName) {
     }
 }
 
-// Test in console
-console.log(describeRoom("foyer"));
-console.log(describeRoom("kitchen"));
-console.log(describeRoom("upstairs"));
-console.log(describeRoom("basement"));
-
 const exampleNode = {
     image: "images/entrance.jpg",
-    text: "You stand at the entrance of the abandoned house. The door hangs crooked on its hinges.",
+    text: "You stand at the entrance of the abandoned house. The door's paint is coming off.",
     choices: [
         "Step inside",
         "Walk around the house"
     ]
 };
 
-// Test object structure
-console.log(exampleNode.image);
-console.log(exampleNode.text);
-console.log(exampleNode.choices);
 
 
 const storyNodes = [
     {
         image: "images/entrance.jpg",
         text: "You stand at the entrance of the abandoned house. The door hangs crooked on its hinges.",
-        choices: ["Enter the foyer", "Leave the property"]
+        choices: ["Come through the entrance", "Leave the property"]
     },
     {
         image: "images/hallway.jpg",
@@ -65,3 +55,5 @@ function displayNode(index) {
     imageElement.src = node.image;
     textElement.textContent = node.text;
 }
+//making first scene appear, i was initially having trouble with this but figured it out later :)
+displayNode(0);
