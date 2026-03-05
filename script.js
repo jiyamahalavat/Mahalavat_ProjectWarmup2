@@ -23,22 +23,22 @@ const exampleNode = {
 
 const storyNodes = [
     {
-        image: "entrance.jpg",
+        image: "images/entrance.jpg",
         text: "You stand at the entrance of the abandoned house. The door hangs crooked on its hinges.",
         choices: ["Come through the entrance", "Leave the property"]
     },
     {
-        image: "hallway.jpg",
+        image: "images/hallway.jpg",
         text: "A long hallway stretches ahead. The wallpaper peels in long strips.",
         choices: ["Open the kitchen door", "Climb the stairs"]
     },
     {
-        image: "kitchen.jpg",
+        image: "images/kitchen.jpg",
         text: "The kitchen smells of mildew. Rusted pots sit abandoned on the stove.",
         choices: ["Search the cabinets", "Return to the hallway"]
     },
     {
-        image: "upstairs.jpg",
+        image: "images/upstairs.jpg",
         text: "At the top of the stairs, shadows gather near a cracked bedroom door.",
         choices: ["Enter the bedroom", "Go back downstairs"]
     }
